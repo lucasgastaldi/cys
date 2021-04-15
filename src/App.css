@@ -3,8 +3,9 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 40px;
   pointer-events: none;
+  flex-direction: row;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -15,13 +16,22 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  margin-top: 0;
   align-items: center;
+  flex-direction: row;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.App-header ul li {
+  display: flex;
+  margin-top: 0;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center; 
+  padding-right: 40px;
 }
 
 .App-link {
