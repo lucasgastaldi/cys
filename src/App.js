@@ -1,6 +1,6 @@
 import './App.css';
 import { ItemListContainer } from './Components/Items/ItemListContainer';
-import { NavBar } from './Components/Nav/navbar'
+import { NavBar } from './Components/Nav/Navbar'
 
 function App() {
   const greeting = "Bienvenido a CyS!"
