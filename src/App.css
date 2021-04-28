@@ -79,6 +79,31 @@ body {
   height: 50px;
 }
 
+.botonProductos {
+  border: 5px;
+  border-radius: 25px;
+  border-style: double;
+  border-color: chartreuse;
+  font-family: 'Lexend Peta', sans-serif;
+  color: blue;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 35px;
+}
+
+.verProductos {
+  display: inline-block;
+  flex-direction: row;
+  border: 5px;
+  border-radius: 25px;
+  width: 300px;
+  border-color: tomato;
+  border-style: double;
+  background-color: black;
+  color: white;
+  margin: 30px;
+}
+
 .subtitulo {
   font-family: 'Raleway', sans-serif;
 }
