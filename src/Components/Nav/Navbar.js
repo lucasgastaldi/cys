@@ -1,5 +1,6 @@
 import logo from '../../images/CYS.png';
-import { CartWidget } from '../Cart/CartWidget'
+import { CartWidget } from '../Cart/CartWidget';
+import { NavLink } from 'react-router-dom'
 
 export const NavBar = () => {
     return (
@@ -9,10 +10,18 @@ export const NavBar = () => {
             </div>
             <div>
                 <ul>
-                    <li><a>Home</a></li>
-                    <li><a>Productos</a></li>
-                    <li><a>Historia</a></li>
-                    <li><a>Contacto</a></li>
+                    <li> 
+                        <NavLink exact to='/' className='navlink' activeClassName='active-navlink'>Home</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to='/productos' className='navlink' activeClassName='active-navlink'>Productos</NavLink> 
+                    </li>
+                    <li>
+                        <NavLink to='/historia' className='navlink' activeClassName='active-navlink'>Historia</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to='7contacto' className='navlink' activeClassName='active-navlink'>Contacto</NavLink>
+                    </li>
                 </ul>
             </div>
             <div className="App-cart">
