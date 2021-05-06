@@ -111,3 +111,14 @@ body {
 .subtitulo__1 {
   font-family: 'Lexend Peta', sans-serif;
 }
+
+.navlink {
+ background-color: black;
+}
+
+.active-navlink {
+  box-shadow: 0 3px 8px 3px blue;
+  padding: 10px;
+  border-radius: 15px;
+}
+
