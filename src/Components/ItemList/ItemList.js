@@ -1,9 +1,8 @@
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { productsData } from "../Item/Item"
 
-
 export function ItemList() {
-    const [product, setProduct] = useState('')
+    const [product, setProduct] = useState([])
 
     const VerProductos = () => {
 
@@ -15,7 +14,6 @@ export function ItemList() {
         getProducts.then( () => {
             setProduct(productsData)
         })
-        return product
     }
     
     return (
@@ -27,7 +25,7 @@ export function ItemList() {
             {product.length && product.map((product) => (
                 <div className="verProductos">
                     <h3 className="subtitulo">{product.name}</h3>
-                    <img src={product.image}></img>
+                    <img alt='' src={product.image}></img>
                     <p className="subtitulo__1">Colores: {product.color}</p>
                     <h4 className="subtitulo__1">${product.price}</h4>
                 </div>

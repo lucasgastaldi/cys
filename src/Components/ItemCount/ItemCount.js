@@ -1,5 +1,6 @@
 import {useState} from 'react'  
-import carrito from '../Cart/carrito.png';
+import carrito from '../../images/carrito.png'
+import { Cart } from '../Cart/Cart'
 
 export function ItemCount(props) {   
     const [count, setCount] = useState (props.initial)
@@ -21,7 +22,10 @@ export function ItemCount(props) {
             <p className="subtitulo__1">Stock: {props.stock}</p>
             <div className="agregarAlCarrito">
                 <button className="waves-effect waves-teal btn-flat"><img src={carrito} height="40px" alt="carrito" /></button>
-            </div>      
+            </div>
+            <div className="terminarCompra">
+                <button onClick={Cart} className="waves-effect waves-teal btn-flat">Terminar mi Compra</button>
+            </div>
         </div> 
     )
 }
