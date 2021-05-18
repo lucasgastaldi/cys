@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import React from 'react'
 
 export const CartContext = React.createContext([]);
 
@@ -11,7 +12,7 @@ export const CartContextProvider = props => {
 
 
     const productsCount = () => {
-        return products.reduce((acc, p) => (acc += p.quantity))
+        return products.reduce((acc, product) => (acc += product.quantity))
     }
 
     const delProduct = (id) => {
@@ -26,7 +27,7 @@ export const CartContextProvider = props => {
     }
 
     const getTotal = () => {
-
+        return products.reduce((acc, product) => (acc += product.price * product.quantity))
     }
 
     return (
