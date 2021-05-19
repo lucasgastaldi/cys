@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { productsData } from "../Item/Item"
+import { Item } from "../Item/Item"
 
 export function ItemList() {
     const [product, setProduct] = useState([])
@@ -8,11 +8,11 @@ export function ItemList() {
 
         let getProducts = new Promise ((resolve, reject) => {
            setTimeout(() => {
-                resolve(productsData)
+                resolve(Item)
             }, 2000)
         })
         getProducts.then( () => {
-            setProduct(productsData)
+            setProduct(Item)
         })
     }
     
