@@ -27,8 +27,9 @@ export function ItemDetailContainer() {
                 (querySnapshot) => {
                     if(querySnapshot.size === 0) {
                         setEmptyCategory(true)
+                    } else {
+                        setItems(querySnapshot.docs.map((doc) => doc.data()))
                     }
-                    setItems(querySnapshot.docs.map((doc) => doc.data()))
                 }
             ) 
         }, []
